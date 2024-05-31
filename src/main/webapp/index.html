@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chat Server</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+
+<div class="Container">
+  <div class="Title">
+    <h1>Chat Room</h1>
+  </div>
+  <div class="Display">
+    <div class="ServerChannels">
+      <h2>Channels</h2>
+      <div class="Channels">
+        <button class="button" type="button" id="CreateRoom">Create Room</button>
+        <select id="roomSelect">
+          <option value="general">General</option>
+        </select>
+        <a class="button" href="index.html">ChatRoom</a>
+        <a class="button" href="about.html">About</a>
+      </div>
+    </div>
+    <div class="ChatLogs" id="chatlog">
+      <div class="ChatRoomTitle">
+        <h3>Channel Name</h3>
+      </div>
+      <input id="usernameInput" type="text" placeholder="Enter your username">
+      <div class="ChatMsgs">
+        <textarea title="Chat Log" id="log" readonly></textarea>
+      </div>
+      <input class="ChatInput" title="Chat Input" id="input" type="text"/>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
+
+
